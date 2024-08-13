@@ -5,7 +5,14 @@ export default function ScalePage() {
   return (
     <div>
       Scale Page
-      <Image alt="image for scale page" src={scaleImg} />
+      <div className="absolute -z-10 inset-0">
+        <Image
+          alt="image for scale page"
+          src={scaleImg}
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </div>
     </div>
   );
 }

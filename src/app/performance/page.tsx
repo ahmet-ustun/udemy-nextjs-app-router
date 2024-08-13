@@ -5,7 +5,14 @@ export default function PerformancePage() {
   return (
     <div>
       Performance Page
-      <Image alt="image for performance page" src={performanceImg} />
+      <div className="absolute -z-10 inset-0">
+        <Image
+          alt="image for performance page"
+          src={performanceImg}
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </div>
     </div>
   );
 }
