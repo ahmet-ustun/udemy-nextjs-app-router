@@ -1,18 +1,12 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
 import reliabilityImg from "public/reliability.jpg";
 
 export default function ReliabilityPage() {
   return (
-    <div>
-      Reliability Page
-      <div className="absolute -z-10 inset-0">
-        <Image
-          alt="image for reliability page"
-          src={reliabilityImg}
-          fill
-          style={{ objectFit: "cover" }}
-        />
-      </div>
-    </div>
+    <Hero
+      imgData={reliabilityImg}
+      imgAlt="an image of welding metal"
+      title="Super high reliability hosting"
+    />
   );
 }
